@@ -1,0 +1,20 @@
+{
+  "Question": [
+      {
+        "question" : "q1",
+        "category" : "s1",
+        "answers" : [
+          {"answer": "a1", "result": true },
+          {"answer": "b1", "result": false }
+        ]
+      },
+      {
+          "question" : "q2",
+          "category" : "s2",
+          "answers" : [
+            {"answer": "a2", "result": true },
+            {"answer": "b2", "result": false }
+          ]
+        }
+  ]
+}
