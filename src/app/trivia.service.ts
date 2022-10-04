@@ -6,9 +6,13 @@ import {QuestionArray} from './trivia';
 @Injectable({
   providedIn: 'root'
 })
+
 export class TriviaService {
 
-  constructor(private hhtp: HttpClient) { }
+  constructor(private http: HttpClient) { }
 
-  return this.http.get('') as Observable<QuestionArray>;
+  getTrivia(): Observable<QuestionArray> {
+   return this.http.get('https://raw.githubusercontent.com/emomonkey/classic-game-trivia/main/src/assets/data/trivia.json') as Observable<QuestionArray>;
+  }
+
 }

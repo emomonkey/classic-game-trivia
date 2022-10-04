@@ -1,5 +1,5 @@
-{
-  "Question": [
+[
+
       {
         "question" : "q1",
         "category" : "s1",
@@ -16,5 +16,5 @@
             {"answer": "b2", "result": false }
           ]
         }
-  ]
-}
+
+]

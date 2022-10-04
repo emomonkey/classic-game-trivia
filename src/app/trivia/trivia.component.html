@@ -1,1 +1,9 @@
-<p>trivia works!</p>
+<div id="question-container">
+  <ng-container *ngIf="question; else quizComplete">
+    <p><b>{{ question.category}}</b></p>
+    <p [innerHTML]="question.question"></p>
+  </ng-container>
+  <ng-template #quizComplete>
+    <p>We're all out of questions!</p>
+  </ng-template>
+</div>
