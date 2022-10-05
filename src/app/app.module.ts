@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { TriviaComponent } from './trivia/trivia.component';
+import { FormsModule } from '@angular/forms';
+import { MatRadioModule } from "@angular/material/radio";
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { TriviaComponent } from './trivia/trivia.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     HttpClientModule,
+    FormsModule,
+    MatRadioModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

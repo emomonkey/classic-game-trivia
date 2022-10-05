@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TriviaService } from '../trivia.service';
-import {Question, QuestionArray} from "../trivia";
+import {Question, QuestionArray, Answer} from "../trivia";
 
 @Component({
   selector: 'app-trivia',
@@ -10,6 +10,7 @@ import {Question, QuestionArray} from "../trivia";
 export class TriviaComponent implements OnInit {
   triviaData: QuestionArray = [];
   question: Question|null = null;
+  answer: Answer|null = null;
 
   constructor(private triviaService: TriviaService) { }
 
@@ -37,6 +38,13 @@ export class TriviaComponent implements OnInit {
     } else {
       this.question = null;
     }
+  }
+
+  getCorrectAnswer() {
+    if (this.question) {
+      return this.question.answers.filter(answer => answer.is_correct)[0].answer;
+    }
+    return '';
   }
 
 }

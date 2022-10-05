@@ -1,19 +1,19 @@
 [
 
       {
-        "question" : "q1",
-        "category" : "s1",
+        "question" : "Which of these games are wireframe 3D",
+        "category" : "Sinclair Spectrum",
         "answers" : [
-          {"answer": "a1", "result": true },
-          {"answer": "b1", "result": false }
+          {"answer": "Starstrike", "is_correct": true },
+          {"answer": "Tau Ceti", "is_correct": false }
         ]
       },
       {
-          "question" : "q2",
-          "category" : "s2",
+          "question" : "Which of these games where produced by Ultimate Play the Game",
+          "category" : "Sinclair Spectrum",
           "answers" : [
-            {"answer": "a2", "result": true },
-            {"answer": "b2", "result": false }
+            {"answer": "Atic Atac", "is_correct": true },
+            {"answer": "Avalon", "is_correct": false }
           ]
         }
 
