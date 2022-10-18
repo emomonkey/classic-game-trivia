@@ -12,3 +12,10 @@ export interface Question {
 }
 
 export interface QuestionArray extends Array<Question> {}
+
+export interface Score {
+  score: number,
+  scoredate: Date
+}
+
+

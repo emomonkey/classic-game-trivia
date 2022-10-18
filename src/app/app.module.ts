@@ -8,11 +8,14 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { TriviaComponent } from './trivia/trivia.component';
 import { FormsModule } from '@angular/forms';
 import { MatRadioModule } from "@angular/material/radio";
+import {MatButtonModule} from "@angular/material/button";
+import { BannerComponent } from './banner/banner.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TriviaComponent
+    TriviaComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,
@@ -22,6 +25,7 @@ import { MatRadioModule } from "@angular/material/radio";
     HttpClientModule,
     FormsModule,
     MatRadioModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
