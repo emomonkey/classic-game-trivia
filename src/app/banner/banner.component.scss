@@ -1,8 +1,10 @@
 .mainHeader {
-  padding: 20px 30px;
-  display: flex;
+
   align-items: centre;
   background-color: #282727;
+  background-image: url('https://raw.githubusercontent.com/emomonkey/classic-game-trivia/main/src/assets/images/titlebarbckgrnd.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .headerText {
@@ -10,10 +12,9 @@
   margin-left: 10px;
 }
 
-.passageLogo {
-  background-image: url('https://');
+.gitLogo {
+  background-image: url('https://raw.githubusercontent.com/emomonkey/classic-game-trivia/main/src/assets/images/github.png');
   background-repeat: no-repeat;
-  background-size: cover;
   width: 60px;
   height: 60px;
   cursor: pointer;
